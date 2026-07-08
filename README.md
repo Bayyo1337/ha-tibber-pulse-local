@@ -41,7 +41,7 @@ Please consider [using my personal Tibber invitation link to join Tibber today](
 
 ## Want to report an issue?
 
-Please use the [GitHub Issues](https://github.com/Bayyo1337/ha-tibber-pulse-local/issues) for reporting any issues you encounter with this integration. Please be so kind before creating a new issue, check the closed ones if your problem has been already reported (& solved). 
+Please use the [GitHub Issues](https://github.com/Bayyo1337/ha-tibber-pulse-local-noah/issues) for reporting any issues you encounter with this integration. Please be so kind before creating a new issue, check the closed ones if your problem has been already reported (& solved). 
 
 __The Integration is now available for +2 years. And looking back, there are three simple things that solved 99.89% of all issues – it's either:__
 - _Option A_: Slightly rotate the pulse reading head anti-clockwise<br/>
@@ -87,7 +87,7 @@ NOW the LED on the Tibber bridge should now light up green and not light blue an
 
 Now use any device (laptop, tablet, phone) to connect to the `Tibber Bridge` WiFi network. The password for the WiFi is the nine characters printed on the Tibber bridge - it's important to include the dash. The password should have the pattern like this example one: `AD56-54BA`.
 
-![img|160x90](https://github.com/Bayyo1337/ha-tibber-pulse-local/raw/main/images/bridge-pwd-location.png)
+![img|160x90](https://github.com/Bayyo1337/ha-tibber-pulse-local-noah/raw/main/images/bridge-pwd-location.png)
 
 ### 3. Set `webserver_force_enable` to `true` in the web frontend
 
@@ -142,7 +142,7 @@ Personally, I have configured my router in a way, that the Pulse Bridge gets alw
 
 When you open the web frontend of the bridge, you always have to provide the user `admin` and the password.
 
-![img|160x90](https://github.com/Bayyo1337/ha-tibber-pulse-local/raw/main/images/web-frontend.png)
+![img|160x90](https://github.com/Bayyo1337/ha-tibber-pulse-local-noah/raw/main/images/web-frontend.png)
 
 Now (when the frontend works for you) almost everything is prepared... Just one more thing to check:
 
@@ -165,9 +165,9 @@ Here you can also check, if the node is listed with the (expected) default NodeI
    
    __Rotate the reading head few degrees anti-clock wise in order to check, if the update frequency will be better (smaller).__ 
    
-   ![img|20x20](https://github.com/Bayyo1337/ha-tibber-pulse-local/raw/main/images/rotate_head.png)
+   ![img|20x20](https://github.com/Bayyo1337/ha-tibber-pulse-local-noah/raw/main/images/rotate_head.png)
    
-   Please also have a [look at the post from @ckarrie](https://github.com/Bayyo1337/ha-tibber-pulse-local/issues/6#issuecomment-1791117188) in order to learn a difference even a few degrees can make!
+   Please also have a [look at the post from @ckarrie](https://github.com/Bayyo1337/ha-tibber-pulse-local-noah/issues/6#issuecomment-1791117188) in order to learn a difference even a few degrees can make!
 
 
 #### Finally, you are done!

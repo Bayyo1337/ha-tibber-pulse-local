@@ -220,7 +220,7 @@ class TibberLocalConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 vol.Required(CONF_NODE_NUMBER, default=user_input[CONF_NODE_NUMBER]): int,
                 vol.Required(CONF_IGNORE_READING_ERRORS, default=user_input[CONF_IGNORE_READING_ERRORS]): bool
             }),
-            description_placeholders={"repo": "https://github.com/Bayyo1337/ha-tibber-pulse-local"},
+            description_placeholders={"repo": "https://github.com/Bayyo1337/ha-tibber-pulse-local-noah"},
             last_step=True,
             errors=self._errors,
         )

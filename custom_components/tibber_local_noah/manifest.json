@@ -1,0 +1,15 @@
+{
+  "domain": "tibber_local_noah",
+  "name": "Tibber Pulse Local Noah",
+  "codeowners": [
+    "@Bayyo1337"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/Bayyo1337/ha-tibber-pulse-local/blob/main/README.md",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/Bayyo1337/ha-tibber-pulse-local/issues",
+  "requirements": ["smllib>=1.7"],
+  "version": "2026.6.2"
+}

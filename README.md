@@ -1,4 +1,4 @@
-# Tibber Pulse IR LOCAL
+# Tibber Pulse IR LOCAL - Noah Fork
 
 If you like to access the data of your Tibber Pulse IR directly (instead of the detour through the cloud), then there is a simple approach to read the data directly from the Tibber Pulse Bridge. There are alternative solutions via an additional MQTT - but why should the data go through such a proxy if it can be read directly.
 
@@ -41,7 +41,7 @@ Please consider [using my personal Tibber invitation link to join Tibber today](
 
 ## Want to report an issue?
 
-Please use the [GitHub Issues](https://github.com/marq24/ha-tibber-pulse-local/issues) for reporting any issues you encounter with this integration. Please be so kind before creating a new issue, check the closed ones if your problem has been already reported (& solved). 
+Please use the [GitHub Issues](https://github.com/Bayyo1337/ha-tibber-pulse-local/issues) for reporting any issues you encounter with this integration. Please be so kind before creating a new issue, check the closed ones if your problem has been already reported (& solved). 
 
 __The Integration is now available for +2 years. And looking back, there are three simple things that solved 99.89% of all issues – it's either:__
 - _Option A_: Slightly rotate the pulse reading head anti-clockwise<br/>
@@ -87,7 +87,7 @@ NOW the LED on the Tibber bridge should now light up green and not light blue an
 
 Now use any device (laptop, tablet, phone) to connect to the `Tibber Bridge` WiFi network. The password for the WiFi is the nine characters printed on the Tibber bridge - it's important to include the dash. The password should have the pattern like this example one: `AD56-54BA`.
 
-![img|160x90](https://github.com/marq24/ha-tibber-pulse-local/raw/main/images/bridge-pwd-location.png)
+![img|160x90](https://github.com/Bayyo1337/ha-tibber-pulse-local/raw/main/images/bridge-pwd-location.png)
 
 ### 3. Set `webserver_force_enable` to `true` in the web frontend
 
@@ -142,7 +142,7 @@ Personally, I have configured my router in a way, that the Pulse Bridge gets alw
 
 When you open the web frontend of the bridge, you always have to provide the user `admin` and the password.
 
-![img|160x90](https://github.com/marq24/ha-tibber-pulse-local/raw/main/images/web-frontend.png)
+![img|160x90](https://github.com/Bayyo1337/ha-tibber-pulse-local/raw/main/images/web-frontend.png)
 
 Now (when the frontend works for you) almost everything is prepared... Just one more thing to check:
 
@@ -165,9 +165,9 @@ Here you can also check, if the node is listed with the (expected) default NodeI
    
    __Rotate the reading head few degrees anti-clock wise in order to check, if the update frequency will be better (smaller).__ 
    
-   ![img|20x20](https://github.com/marq24/ha-tibber-pulse-local/raw/main/images/rotate_head.png)
+   ![img|20x20](https://github.com/Bayyo1337/ha-tibber-pulse-local/raw/main/images/rotate_head.png)
    
-   Please also have a [look at the post from @ckarrie](https://github.com/marq24/ha-tibber-pulse-local/issues/6#issuecomment-1791117188) in order to learn a difference even a few degrees can make!
+   Please also have a [look at the post from @ckarrie](https://github.com/Bayyo1337/ha-tibber-pulse-local/issues/6#issuecomment-1791117188) in order to learn a difference even a few degrees can make!
 
 
 #### Finally, you are done!
@@ -181,14 +181,14 @@ When part I, II & III are completed/confirmed, __then__ you can install and use 
 #### Option 1: via HACS
  
 - Install [Home Assistant Community Store (HACS)](https://hacs.xyz/)
-- Add integration repository (search for "Tibber Pulse Local" in "Explore & Download Repositories")
+- Add integration repository (search for "Tibber Pulse Local Noah" in "Explore & Download Repositories")
 - Use the 3-dots at the right of the list entry (not at the top bar!) to download/install the custom integration - the latest release version is automatically selected. Only select a different version if you have specific reasons.
 - After you have pressed download and the process has completed, you must __Restart Home Assistant__ to install all dependencies
 - Setup the custom integration as described below (see _Step II: Adding or enabling the integration_)
 
 #### Option 2: manual steps
 
-- Copy all files from `custom_components/tibber_local/` to `custom_components/tibber_local/` inside your config Home Assistant directory.
+- Copy all files from `custom_components/tibber_local_noah/` to `custom_components/tibber_local_noah/` inside your config Home Assistant directory.
 - Restart Home Assistant to install all dependencies
 
 ### Step II: Adding or enabling the integration
@@ -199,13 +199,13 @@ __You must have installed the integration (manually or via HACS before)!__
 
 Just click the following Button to start the configuration automatically (for the rest see _Option 2: Manually steps by step_):
 
-[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=tibber_local)
+[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=tibber_local_noah)
 
 #### Option 2: Manually steps by step
 
 Add custom integration using the web interface and follow instruction on screen.
 
-- Go to `Configuration -> Integrations` and add "Tibber Pulse Local" integration
+- Go to `Configuration -> Integrations` and add "Tibber Pulse Local Noah" integration
 - Specify:
     - Provide display name for the device
     - Provide the address (hostname or IP) of the Pulse Bridge
@@ -338,8 +338,8 @@ Here just another example with just a single value (without additional atributes
 [hacs]: https://github.com/hacs/integration
 [hacsbadge]: https://img.shields.io/badge/HACS-Default-blue.svg?style=for-the-badge&logo=homeassistantcommunitystore&logoColor=ccc
 
-[hainstall]: https://my.home-assistant.io/redirect/config_flow_start/?domain=tibber_local
-[hainstallbadge]: https://img.shields.io/badge/dynamic/json?style=for-the-badge&logo=home-assistant&logoColor=ccc&label=usage&suffix=%20installs&cacheSeconds=15600&url=https://analytics.home-assistant.io/custom_integrations.json&query=$.tibber_local.total
+[hainstall]: https://my.home-assistant.io/redirect/config_flow_start/?domain=tibber_local_noah
+[hainstallbadge]: https://img.shields.io/badge/dynamic/json?style=for-the-badge&logo=home-assistant&logoColor=ccc&label=usage&suffix=%20installs&cacheSeconds=15600&url=https://analytics.home-assistant.io/custom_integrations.json&query=$.tibber_local_noah.total
 
 [ghs]: https://github.com/sponsors/marq24
 [ghsbadge]: https://img.shields.io/github/sponsors/marq24?style=for-the-badge&logo=github&logoColor=ccc&link=https%3A%2F%2Fgithub.com%2Fsponsors%2Fmarq24&label=Sponsors

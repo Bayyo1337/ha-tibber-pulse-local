@@ -1,4 +1,4 @@
-# Tibber Pulse IR LOCAL - Noah Fork
+# Tibber Pulse Local Noah
 
 If you like to access the data of your Tibber Pulse IR directly (instead of the detour through the cloud), then there is a simple approach to read the data directly from the Tibber Pulse Bridge. There are alternative solutions via an additional MQTT - but why should the data go through such a proxy if it can be read directly.
 
@@ -172,7 +172,7 @@ Here you can also check, if the node is listed with the (expected) default NodeI
 
 #### Finally, you are done!
 
-When part I, II & III are completed/confirmed, __then__ you can install and use this `Tibber Local Polling` integration.
+When part I, II & III are completed/confirmed, __then__ you can install and use this `Tibber Pulse Local Noah` integration.
 
 ## Setup / Installation
 
